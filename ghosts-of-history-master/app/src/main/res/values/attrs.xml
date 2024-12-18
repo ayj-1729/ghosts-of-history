@@ -1,0 +1,6 @@
+<resources>
+    <attr name="colorBluevota" format="color" />
+    <attr name="colorOnBluevota" format="color" />
+    <attr name="colorBluevotaContainer" format="color" />
+    <attr name="colorOnBluevotaContainer" format="color" />
+</resources>

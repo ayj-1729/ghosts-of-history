@@ -1,0 +1,26 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:icon="@drawable/goh_icon"
+        android:label="@string/app_name_explorer">
+
+        <activity
+            android:name=".explorer.MapsActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name=".explorer.SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/PreSplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".view.CloudAnchorActivity"
+            android:theme="@style/AppTheme"/>
+    </application>
+</manifest>
