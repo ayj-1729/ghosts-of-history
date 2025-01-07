@@ -3,17 +3,17 @@
     <item android:drawable="@drawable/splash_bg_gradient" />
 
     <item
-        android:width="310dp"
-        android:height="550dp"
+        android:width="300dp"
+        android:height="300dp"
         android:drawable="@drawable/opening_surface"
         android:gravity="center"
-        android:top="10dp" />
+        android:top="-70dp" />
 
     <item
         android:drawable="@drawable/opening_surface_text"
         android:width="350dp"
         android:height="150dp"
         android:gravity="center"
-        android:top="400dp" />
+        android:top="300dp" />
 
 </layer-list>

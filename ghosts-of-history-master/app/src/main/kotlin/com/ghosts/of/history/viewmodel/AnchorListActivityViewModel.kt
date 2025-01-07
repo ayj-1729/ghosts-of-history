@@ -30,5 +30,4 @@ class AnchorListActivityViewModel constructor(
             }
         }
     }
-
 }

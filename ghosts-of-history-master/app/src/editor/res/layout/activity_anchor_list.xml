@@ -31,23 +31,23 @@
             style="?attr/collapsingToolbarLayoutLargeStyle"
             android:layout_width="match_parent"
             android:layout_height="?attr/collapsingToolbarLayoutLargeSize"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed"
-            app:contentScrim="@color/md_theme_primary"
-            app:collapsedTitleTextColor="@color/md_theme_onPrimary"
-            app:expandedTitleTextColor="@color/md_theme_onPrimary"
             android:background="@color/md_theme_primary"
+            app:collapsedTitleTextColor="@color/md_theme_onPrimary"
+            app:contentScrim="@color/md_theme_primary"
+            app:expandedTitleTextColor="@color/md_theme_onPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:toolbarId="@+id/toolbar">
 
             <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:elevation="0dp"
-                app:popupTheme="@style/AppTheme"
-                app:layout_collapseMode="pin"
                 android:background="@color/md_theme_primary"
+                android:elevation="0dp"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme"
                 app:titleTextAppearance="@style/app_bar_title"
-                app:titleTextColor="@color/md_theme_onPrimary"/>
+                app:titleTextColor="@color/md_theme_onPrimary" />
             <!--                app:layout_collapseMode="pin"-->
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
