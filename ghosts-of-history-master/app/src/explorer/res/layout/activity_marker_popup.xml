@@ -3,9 +3,10 @@
     android:orientation="vertical"
     android:layout_width="350dp"
     android:layout_height="wrap_content"
-    android:background="@color/colorPrimaryDark"
+    android:background="@drawable/rounded_bg"
     android:padding="5dp"
     android:layout_gravity="center">
+
     <TextView
         android:id="@+id/txtclose"
         android:layout_width="30dp"
@@ -17,10 +18,12 @@
         android:layout_gravity="end"
         android:gravity="center"
         android:background="@drawable/button_bg"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <ImageView
             android:layout_width="250dp"
             android:layout_height="250dp"
@@ -29,6 +32,7 @@
             android:id="@+id/popImage"
             android:layout_gravity="center"
             android:layout_marginTop="15dp"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -38,6 +42,7 @@
             android:textColor="@color/white"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -50,3 +55,5 @@
     </LinearLayout>
 
 </LinearLayout>
+
+

@@ -1,3 +1,5 @@
+
+
 <!--
    Copyright 2020 Google LLC
 
@@ -62,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="@style/preview_title"
                 android:text="Saving…"
-            />
+                />
         </LinearLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout

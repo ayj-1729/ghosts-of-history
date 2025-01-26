@@ -153,7 +153,7 @@
     <color name="colorOnBluevota_highContrast">#FFFFFF</color>
     <color name="colorBluevotaContainer_highContrast">#004574</color>
     <color name="colorOnBluevotaContainer_highContrast">#FFFFFF</color>
-
+    <color name="colorOnGesButton">#FFB4A8</color>
     <!-- legacy colors -->
     <color name="white">#FFFFFF</color>
     <color name="orange">#FFC622</color>

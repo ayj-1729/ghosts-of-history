@@ -24,7 +24,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_margin="30dp"
-            android:backgroundTint="@color/md_theme_secondary"
+            android:backgroundTint="@color/md_theme_tertiaryFixedDim"
             android:padding="10dp"
             android:text="@string/proceed_to_scanning"
             android:textAllCaps="false"
@@ -34,12 +34,19 @@
 
     </RelativeLayout>
 
-    <View
+    <FrameLayout
         android:id="@+id/splash_screen"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/goh_splashscreen_bg"
-        android:gravity="center" />
+        android:background="@color/md_theme_onSurface_highContrast">
+
+        <!-- VideoView for splash screen -->
+        <VideoView
+            android:id="@+id/splashVideoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+    </FrameLayout>
 
 </FrameLayout>
 

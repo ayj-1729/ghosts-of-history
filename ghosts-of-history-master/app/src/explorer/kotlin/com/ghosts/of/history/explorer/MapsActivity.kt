@@ -1,5 +1,5 @@
 package com.ghosts.of.history.explorer
-
+import android.net.Uri
 import android.Manifest
 import android.annotation.SuppressLint
 import android.app.Dialog
@@ -12,6 +12,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Gravity
 import android.view.View
+import android.widget.VideoView
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
@@ -89,8 +90,11 @@ class MapsActivity : AppCompatActivity() {
             cameraPosition = savedInstanceState.getParcelable(KEY_CAMERA_POSITION)
         }
 
+        // Set the layout
         setContentView(R.layout.activity_maps)
-        removeSplashScreenAfterTimeout()
+
+        // Play the splash screen video
+        showSplashScreen()
 
         // Construct a FusedLocationProviderClient.
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this)
@@ -127,19 +131,40 @@ class MapsActivity : AppCompatActivity() {
 
     }
 
-    private fun removeSplashScreenAfterTimeout() = lifecycleScope.launch {
-        delay(SPLASHSCREEN_TIMEOUT_MS)
+    private fun showSplashScreen() {
+        // Get references to splash screen and video view
         val splashScreen = findViewById<View>(R.id.splash_screen)
-        val root = findViewById<ViewGroup>(R.id.maps_root)
+        val videoView = findViewById<VideoView>(R.id.splashVideoView)
 
-        val transition: Transition = Slide(Gravity.TOP)
-        transition.setDuration(200)
-        transition.addTarget(R.id.splash_screen)
+        // Set up and play the splash video
+        val videoUri = Uri.parse("android.resource://$packageName/${R.raw.splash_video}")
+        videoView.setVideoURI(videoUri)
 
-        TransitionManager.beginDelayedTransition(root, transition)
+        // Ensure splash screen is visible before video starts
+        splashScreen.visibility = View.VISIBLE
 
-        splashScreen.visibility = View.GONE
+        // Start video playback as soon as it is prepared
+        videoView.setOnPreparedListener {
+            it.isLooping = false // Prevent looping
+            videoView.start()
+        }
+
+        // Add transition effect when the video ends
+        videoView.setOnCompletionListener {
+            val root = findViewById<ViewGroup>(R.id.maps_root)
+
+            // Add a slide-up animation when hiding the splash screen
+            val transition: Transition = Slide(Gravity.TOP).apply {
+                duration = 200 // Transition duration in milliseconds
+                addTarget(R.id.splash_screen)
+            }
+            TransitionManager.beginDelayedTransition(root, transition)
+
+            // Hide the splash screen after the transition
+            splashScreen.visibility = View.GONE
+        }
     }
+
 
     private fun onARButtonPressed() {
 //        Intent(this, ExplorerLobbyActivity::class.java).also { intent ->

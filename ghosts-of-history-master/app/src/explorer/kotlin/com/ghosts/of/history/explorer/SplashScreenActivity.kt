@@ -1,24 +1,25 @@
 package com.ghosts.of.history.explorer
-
+import androidx.core.content.ContextCompat
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import androidx.lifecycle.lifecycleScope
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
+import androidx.core.view.WindowCompat
 
 class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        installSplashScreen()
         super.onCreate(savedInstanceState)
 
-        lifecycleScope.launch {
-            delay(500)
-            startActivity(Intent(this@SplashScreenActivity, MapsActivity::class.java))
-            overridePendingTransition(0, 0)
-            finish()
-        }
+        window.statusBarColor = ContextCompat.getColor(this, android.R.color.black)
+
+        // Immediately start MapsActivity
+        startActivity(Intent(this, MapsActivity::class.java))
+        overridePendingTransition(0, 0)
+        finish() // End SplashScreenActivity
     }
 }
+
+
+
+
 
