@@ -1,41 +1,41 @@
 {
   "project_info": {
-    "project_number": "146075790943",
-    "project_id": "ghosts-of-history-649df",
-    "storage_bucket": "ghosts-of-history-649df.firebasestorage.app"
+    "project_number": "612265025419",
+    "project_id": "ghosts-of-history-bd3fe",
+    "storage_bucket": "ghosts-of-history-bd3fe.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:146075790943:android:bbb013565aec126982b5ea",
+        "mobilesdk_app_id": "1:612265025419:android:4233edd541420a0794998e",
         "android_client_info": {
           "package_name": "com.ghosts.of.history"
         }
       },
       "oauth_client": [
         {
-          "client_id": "146075790943-lg6tbu41s8k06of7i84erskdpqjo8dro.apps.googleusercontent.com",
+          "client_id": "612265025419-njpde3o9hu4sh03nure52ilp05lr304s.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.ghosts.of.history",
-            "certificate_hash": "b3bf893fdebce88df5833da462e621f48588df1c"
+            "certificate_hash": "f51c18ca21bcbab138a715ac1574e4adaf95b9e5"
           }
         },
         {
-          "client_id": "146075790943-ksdb0e9mfan62cmt3ah7htvmbvateg2j.apps.googleusercontent.com",
+          "client_id": "612265025419-vpvt27qc37q08cuo6rhqbuvfhv31ggna.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBBKH_4iKhbsmUzxlWYEnv2YHzqPhT7EGs"
+          "current_key": "AIzaSyB2txASuogVIP4b9NsJkxe3mSl1dyGtGcQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "146075790943-ksdb0e9mfan62cmt3ah7htvmbvateg2j.apps.googleusercontent.com",
+              "client_id": "612265025419-vpvt27qc37q08cuo6rhqbuvfhv31ggna.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
@@ -44,35 +44,35 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:146075790943:android:8357170278c4d97082b5ea",
+        "mobilesdk_app_id": "1:612265025419:android:31527db735a2b84c94998e",
         "android_client_info": {
           "package_name": "com.ghosts.of.history.editor"
         }
       },
       "oauth_client": [
         {
-          "client_id": "146075790943-jun1mssi5cm0kgv7jtp6k5ido2p3eej2.apps.googleusercontent.com",
+          "client_id": "612265025419-kktc0u938glfmigcephcq9gj2086oecc.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.ghosts.of.history.editor",
-            "certificate_hash": "b3bf893fdebce88df5833da462e621f48588df1c"
+            "certificate_hash": "f51c18ca21bcbab138a715ac1574e4adaf95b9e5"
           }
         },
         {
-          "client_id": "146075790943-ksdb0e9mfan62cmt3ah7htvmbvateg2j.apps.googleusercontent.com",
+          "client_id": "612265025419-vpvt27qc37q08cuo6rhqbuvfhv31ggna.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBBKH_4iKhbsmUzxlWYEnv2YHzqPhT7EGs"
+          "current_key": "AIzaSyB2txASuogVIP4b9NsJkxe3mSl1dyGtGcQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "146075790943-ksdb0e9mfan62cmt3ah7htvmbvateg2j.apps.googleusercontent.com",
+              "client_id": "612265025419-vpvt27qc37q08cuo6rhqbuvfhv31ggna.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
@@ -81,35 +81,35 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:146075790943:android:ce5a688d6978e89c82b5ea",
+        "mobilesdk_app_id": "1:612265025419:android:2593761cdee4b59894998e",
         "android_client_info": {
           "package_name": "com.ghosts.of.history.explorer"
         }
       },
       "oauth_client": [
         {
-          "client_id": "146075790943-8f34sut6ed49e2t74mhp1km88ah84k3v.apps.googleusercontent.com",
+          "client_id": "612265025419-7n1toatb4i8e8jkee3n3bh6ikcdi3oae.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.ghosts.of.history.explorer",
-            "certificate_hash": "b3bf893fdebce88df5833da462e621f48588df1c"
+            "certificate_hash": "f51c18ca21bcbab138a715ac1574e4adaf95b9e5"
           }
         },
         {
-          "client_id": "146075790943-ksdb0e9mfan62cmt3ah7htvmbvateg2j.apps.googleusercontent.com",
+          "client_id": "612265025419-vpvt27qc37q08cuo6rhqbuvfhv31ggna.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBBKH_4iKhbsmUzxlWYEnv2YHzqPhT7EGs"
+          "current_key": "AIzaSyB2txASuogVIP4b9NsJkxe3mSl1dyGtGcQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "146075790943-ksdb0e9mfan62cmt3ah7htvmbvateg2j.apps.googleusercontent.com",
+              "client_id": "612265025419-vpvt27qc37q08cuo6rhqbuvfhv31ggna.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
