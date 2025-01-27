@@ -29,10 +29,10 @@ android {
     }
     signingConfigs {
         ghosts {
-            keyAlias 'ghosts'
-            keyPassword 'ghosts'
-            storeFile file('ghosts.jks')
-            storePassword 'ghosts'
+            keyAlias 'new-key'
+            keyPassword '172900'
+            storeFile file('ghosts-new-key.jks')
+            storePassword '172900'
             v1SigningEnabled true
             v2SigningEnabled true
         }
