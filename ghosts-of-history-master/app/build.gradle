@@ -29,10 +29,10 @@ android {
     }
     signingConfigs {
         ghosts {
-            keyAlias 'new-key'
-            keyPassword '172900'
-            storeFile file('ghosts-new-key.jks')
-            storePassword '172900'
+            keyAlias 'ghosts'
+            keyPassword 'ghosts'
+            storeFile file('ghosts.jks')
+            storePassword 'ghosts'
             v1SigningEnabled true
             v2SigningEnabled true
         }
@@ -86,7 +86,7 @@ dependencies {
     implementation 'com.google.android.gms:play-services-auth:20.7.0'
     implementation 'androidx.core:core-ktx:1.12.0'
 
-    implementation platform('com.google.firebase:firebase-bom:32.7.1')
+    implementation platform('com.google.firebase:firebase-bom:33.0.0')
     implementation 'com.google.firebase:firebase-analytics'
     implementation 'com.google.firebase:firebase-firestore'
     implementation 'com.google.firebase:firebase-storage'
